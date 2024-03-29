@@ -202,7 +202,7 @@ export default {
           } else {
             let len = data["name"].length - 7;
             this.creator = data["name"].substring(0, len);
-            this.invite = "equalist.xyz/j/" + data["join_code"];
+            this.invite = "equalist.vercel.app/j/" + data["join_code"];
             data["people"].reverse();
             this.friends = data["people"];
             this.loading = false;
@@ -272,7 +272,7 @@ export default {
           } else {
             let len = data["name"].length - 7;
             this.creator = data["name"].substring(0, len);
-            this.invite = "equalist.xyz/j/" + data["join_code"];
+            this.invite = "equalist.vercel.app/j/" + data["join_code"];
             data["people"].reverse();
             this.friends = data["people"];
             this.loading = false;

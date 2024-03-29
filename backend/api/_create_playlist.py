@@ -151,7 +151,7 @@ def create_playlist_api(final_playlist, user, playlist_name):
         url,
         json={
             "name": playlist_name,
-            "description": "Made by equalist.xyz",
+            "description": "Made by equalist.vercel.app",
             "public": True,
         },
         headers=headers,
