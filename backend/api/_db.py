@@ -22,7 +22,10 @@ def _get(key):
 
     if response.status_code == 200:
         data = response.json()
-        return json.loads(data["result"])
+        if "result" in data:
+            if data["result"] is None:
+                return None
+            return json.loads(data["result"])
     else:
         raise ValueError(f"Failed to fetch data. Status code: {response.status_code}")
 
