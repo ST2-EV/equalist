@@ -25,7 +25,6 @@ app = FastAPI()
 origins = [
     "http://localhost",
     "http://localhost:8080",
-    "https://equalist.xyz/",
     "https://equalist.vercel.app/",
 ]
 
@@ -261,7 +260,8 @@ async def join(item: Join):
                 200,
             )
     except Exception as e:
-        return jsonEncode({"message": "join failed"}, 400)
+        print(e)
+        return jsonEncode({"message": "join failed" + str(e)}, 400)
 
 
 @app.get("/friends/{user_id}/{room_id}")
