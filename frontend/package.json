@@ -1,0 +1,24 @@
+{
+  "name": "frontend",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 8080",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "mosha-vue-toastify": "^1.0.23",
+    "register-service-worker": "^1.7.2",
+    "seedrandom": "^3.0.5",
+    "vue": "^3.4.21",
+    "vue-clipboard3": "^2.0.0",
+    "vue-router": "^4.3.0",
+    "vue-sweetalert2": "^5.0.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.1.6"
+  }
+}

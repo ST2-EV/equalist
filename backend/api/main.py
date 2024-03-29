@@ -116,6 +116,8 @@ def login(item: Login):
         return jsonEncode(loginobj, 201)
     except Exception as e:
         print(e)
+        # stack trace
+        raise e
         return jsonEncode({"message": "Login failed, Please try again later"}, 500)
 
 

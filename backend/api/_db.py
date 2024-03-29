@@ -1,3 +1,4 @@
+import json
 import os
 
 import requests
@@ -21,7 +22,7 @@ def _get(key):
 
     if response.status_code == 200:
         data = response.json()
-        return data["result"]
+        return json.loads(data["result"])
     else:
         raise ValueError(f"Failed to fetch data. Status code: {response.status_code}")
 
@@ -120,5 +121,6 @@ def updateUser(updates, key):
 def fetchByEmail(email, name):
     id = f"user_{name}_{email}"
     user = _get(id)
-    user["key"] = id
+    if user:
+        user["key"] = id
     return user
