@@ -22,7 +22,12 @@ from ._spotify import AUTH_URL, CLIENT_ID, REDIRECT_URI, get_access_and_refresh_
 app = FastAPI()
 
 
-origins = ["http://localhost", "http://localhost:8080", "https://equalist.xyz/"]
+origins = [
+    "http://localhost",
+    "http://localhost:8080",
+    "https://equalist.xyz/",
+    "https://equalist.vercel.app/",
+]
 
 app.add_middleware(
     CORSMiddleware,
