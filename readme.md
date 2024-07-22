@@ -1,6 +1,8 @@
 # Equalist
 A group playlist creator that takes your and your friends spotify history into account.
 
+Link to app: [equalist.vercel.app](https://equalist.vercel.app/)
+
 https://github.com/user-attachments/assets/41cd0e30-a02e-482f-b66f-01c18a11d5dc
 
 
